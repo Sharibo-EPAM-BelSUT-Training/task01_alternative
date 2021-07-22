@@ -3,9 +3,22 @@ package gmail.alexejkrawez.a_figure;
 import java.util.Objects;
 
 public class Triangle extends Figure { //треугольник прямоугольный
+
+    /**
+     * Переменная стороны a прямоугольника
+     */
     private double a;
+
+    /**
+     * Переменная стороны b прямоугольника
+     */
     private double b;
+
+    /**
+     * Переменная стороны c прямоугольника
+     */
     private double c;
+
     /*Делаем безопасными переменные*/
     public double getA() {
         return a;
@@ -30,6 +43,8 @@ public class Triangle extends Figure { //треугольник прямоуго
 
     /**
      * Получение периметра треугольника.
+     *
+     * @return - возвращает периметр числом с плавающей точкой.
      * */
     public double Perimeter() {
         return (a + b + c);
@@ -37,6 +52,8 @@ public class Triangle extends Figure { //треугольник прямоуго
 
     /**
      * Получение площади треугольника.
+     *
+     * @return - возвращает площадь числом с плавающей точкой.
      * */
     public double Area() {
         double half_per = (a + b + c) / 2;
@@ -45,6 +62,8 @@ public class Triangle extends Figure { //треугольник прямоуго
 
     /**
      * Определение наименьшей стороны треугольника.
+     *
+     * @return - возвращает значение наименьшей стороны числом с плавающей точкой.
      * */
     @Override
     public double getMinSize() {
@@ -53,6 +72,8 @@ public class Triangle extends Figure { //треугольник прямоуго
 
     /**
      * Определение наибольшей стороны треугольника.
+     *
+     * @return - возвращает значение наибольшей стороны числом с плавающей точкой.
      * */
     @Override
     public double getMaxSize() {
@@ -61,6 +82,8 @@ public class Triangle extends Figure { //треугольник прямоуго
 
     /**
      * Отображение простого имени класса, размеров сторон треугольника.
+     *
+     * @return - возвращает описание треугольника.
      * */
     @Override
     public String toString () {

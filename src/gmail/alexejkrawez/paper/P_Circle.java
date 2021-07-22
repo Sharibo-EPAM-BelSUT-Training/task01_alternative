@@ -16,6 +16,8 @@ public class P_Circle extends Circle implements Paper {
 
     /**
      * Получение цвета круга.
+     *
+     * @return - возвращает цвет, в который покрашен круг.
      * */
     @Override
     public Caparol getColor() {
@@ -24,6 +26,8 @@ public class P_Circle extends Circle implements Paper {
 
     /**
      * Задание цвета круга из списка enum Caparol.
+     *
+     * @param capcolor - устанавливает цвет кругу.
      * */
     @Override
     public void setColor(Caparol capcolor) {
@@ -33,6 +37,8 @@ public class P_Circle extends Circle implements Paper {
     /**
      * Отображение простого имени класса,
      * размеров длины и ширины круга, его цвета.
+     *
+     * @return - возвращает описание бумажного круга.
      * */
     @Override
     public String toString() {

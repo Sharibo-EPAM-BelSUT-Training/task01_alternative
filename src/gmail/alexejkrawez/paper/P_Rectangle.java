@@ -19,6 +19,8 @@ public class P_Rectangle extends Rectangle implements Paper {
 
     /**
      * Получение цвета прямоугольника.
+     *
+     * @return - возвращает цвет, в который покрашен прямоугольник.
      * */
     @Override
     public Caparol getColor() {
@@ -27,6 +29,8 @@ public class P_Rectangle extends Rectangle implements Paper {
 
     /**
      * Задание цвета прямоугольника из списка enum Caparol.
+     *
+     * @param capcolor - устанавливает цвет прямоугольнику.
      * */
     @Override
     public void setColor(Caparol capcolor) { // Вписываешь цвет из энам и он красит им фигуру.
@@ -36,6 +40,8 @@ public class P_Rectangle extends Rectangle implements Paper {
     /**
      * Отображение простого имени класса,
      * размеров длины и ширины прямоугольника, его цвета.
+     *
+     * @return - возвращает описание бумажного прямоугольника.
      * */
     @Override
     public String toString() {

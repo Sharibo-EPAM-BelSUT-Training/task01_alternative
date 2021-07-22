@@ -1,6 +1,10 @@
 package gmail.alexejkrawez.paper;
 
 public interface Paper { //бумага
+
+    /**
+     * Список цветов, в которые могут быть покрашены бумажные фигуры.
+     */
     enum Caparol { //список цветов
         red,
         orange,
@@ -18,6 +22,8 @@ public interface Paper { //бумага
 
     /**
      * Задание цвета из списка enum Caparol.
+     *
+     * @param capcolor - устанавливает цвет.
      * */
     void setColor(Caparol capcolor);
 
@@ -27,6 +33,8 @@ public interface Paper { //бумага
 
         /**
          * Получение цвета фигуры из списка enum Caparol.
+         *
+         * @return - возвращает цвет фигуры.
          * */
         public Caparol getFigColor() {
             return figure_color;
@@ -36,6 +44,8 @@ public interface Paper { //бумага
          * Задание цвета фигуре из списка enum Caparol.
          * Если фигуре уже был присвоен однажды цвет,
          * то второй раз цвет присвоить не удастся.
+         *
+         * @param color - устанавливает фигуре цвет из списка enum.
          * */
         public void setFigColor(Caparol color) {
             if (this.figure_color == null) {

@@ -22,6 +22,8 @@ public class P_Triangle extends Triangle implements Paper {
 
     /**
      * Получение цвета треугольника.
+     *
+     * @return - возвращает цвет, в который покрашен треугольник.
      * */
     @Override
     public Caparol getColor() {
@@ -30,6 +32,8 @@ public class P_Triangle extends Triangle implements Paper {
 
     /**
      * Задание цвета треугольника из списка enum Caparol.
+     *
+     * @param capcolor - устанавливает цвет треугольнику.
      * */
     @Override
     public void setColor(Caparol capcolor) {
@@ -39,6 +43,8 @@ public class P_Triangle extends Triangle implements Paper {
     /**
      * Отображение простого имени класса,
      * размеров длины и ширины треугольника, его цвета.
+     *
+     * @return - возвращает описание бумажного треугольника.
      * */
     @Override
     public String toString() {
